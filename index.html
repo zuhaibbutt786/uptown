@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host Static Website</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Host Your Static Website</h2>
+        <form id="uploadForm">
+            <label for="projectName">Project Name:</label>
+            <input type="text" id="projectName" name="projectName" required>
+
+            <label for="fileUpload">Upload Files (ZIP only):</label>
+            <input type="file" id="fileUpload" name="fileUpload" accept=".zip" required>
+
+            <button type="submit">Host on GitHub</button>
+        </form>
+
+        <p id="statusMessage"></p>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
